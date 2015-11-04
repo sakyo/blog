@@ -1,5 +1,5 @@
 
-{% include '../bootstrap.scrollspy.swig' %}
+<script type="text/javascript" src="{{ url_for(theme.js) }}/src/scrollspy.js?v={{ theme.version }}"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {

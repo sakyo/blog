@@ -72,6 +72,26 @@
   }
 }
 
+
+.post-meta-item-icon {
+  display: none;
+  margin-right: 3px;
+  +tablet() {
+    display: inline-block;
+  }
+  +mobile() {
+    display: inline-block;
+  }
+}
+.post-meta-item-text {
+  +tablet() {
+    display: none;
+  }
+  +mobile() {
+    display: none;
+  }
+}
+
 .posts-expand .post-comments-count {
   +mobile() { display: none; }
 }
@@ -153,6 +173,18 @@
   }
 }
 
-.post-more-link { margin-top: 50px; }
+.post-more-link {
+  margin-top: 50px;
+
+  .btn {
+    color: $read-more-color;
+    font-size: $read-more-font-size;
+    background: $read-more-bg-color;
+    border-radius: $read-more-border-radius;
+  }
+  .btn:hover {
+    @extend .btn:hover;
+  }
+}
 
 .posts-expand .fancybox img { margin: 0 auto; }

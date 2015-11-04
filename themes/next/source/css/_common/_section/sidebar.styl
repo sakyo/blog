@@ -81,7 +81,7 @@
 
 .site-description {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: $site-description-font-size;
   color: $site-description-color;
 }
 
@@ -93,7 +93,7 @@
 .site-state-item {
   display: inline-block;
   padding: 0 15px;
-  border-left: 1px solid #333;
+  border-left: 1px solid $site-state-item-border-color;
 
   &:first-child { border-left: none; }
 
@@ -102,10 +102,15 @@
 .site-state-item-count {
   display: block;
   text-align: center;
-  font-size: 18px;
+  color: $site-state-item-count-color;
+  font-weight: $font-weight-bold;
+  font-size: $site-state-item-count-font-size;
 }
 
-.site-state-item-name { font-size: 13px; }
+.site-state-item-name {
+  font-size: $site-state-item-name-font-size;
+  color: $site-state-item-name-color;
+}
 
 .feed-link {
   margin-top: 20px;
@@ -163,10 +168,12 @@
   display: inline-block;
   cursor: pointer;
   border-bottom: 1px solid transparent;
-  font-size: 15px;
+  font-size: 14px;
+  color: $sidebar-nav-color;
 
-  &:hover { color: $whitesmoke; }
+  &:hover { color: $sidebar-nav-hover-color; }
 }
+
 .page-post-detail .sidebar-nav-toc { padding: 0 5px; }
 
 .page-post-detail .sidebar-nav-overview { margin-left: 10px; }
@@ -201,9 +208,9 @@
   font-size: 14px;
 
   a {
-    color: $grey-dark;
+    color: $post-toc-color;
     &:hover {
-      color: $grey-light;
+      color: $post-toc-hover-color;
     }
   }
 }

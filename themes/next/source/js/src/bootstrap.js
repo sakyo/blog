@@ -1,9 +1,11 @@
+/* global NexT: true */
+
 $(document).ready(function () {
 
   isMobile() && FastClick.attach(document.body);
 
   $("#posts").find('img').lazyload({
-    placeholder: "{{ url_for(theme.images) }}/loading.gif",
+    placeholder: "/images/loading.gif",
     effect: "fadeIn"
   });
 
@@ -22,6 +24,12 @@ $(document).ready(function () {
       $siteNav[animateCallback](ON_CLASS_NAME);
     });
   });
+
+
+  CONFIG.fancybox && NexT.utils.wrapImageWithFancyBox();
+  NexT.utils.embeddedVideoTransformer();
+  NexT.utils.addActiveClassToMenuItem();
+
 
   // Define Motion Sequence.
   motionIntegrator

@@ -2,7 +2,7 @@
 
 
 
-$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'default';
+$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'Muse';
 $variables = base $scheme custom;
 $mixins    = base $scheme custom;
 
@@ -65,6 +65,7 @@ for $mixin in $mixins
 @import "_common/_component/back-to-top";
 @import "_common/_component/duoshuo";
 @import "_common/_component/jiathis";
+@import "_common/_component/affix";
 
 
 
