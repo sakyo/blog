@@ -42,7 +42,7 @@
 
 <link href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 
-<link ref="apple-touch-icon-precomposed" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="favicon.ico" />
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
 {% elif page.tags and page.tags.length %}
