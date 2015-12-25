@@ -1,7 +1,6 @@
 <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="apple-mobile-web-app-capable" content="yes" />
 
 
 {# #238, Disable Baidu tranformation #}
@@ -39,10 +38,8 @@
 
 
 <link href="{{ url_for(theme.vendors) }}/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
 <link href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 
-<link rel="apple-touch-icon" href="/favicon.ico" />
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
 {% elif page.tags and page.tags.length %}
@@ -70,6 +67,7 @@
   <meta property="fb:app_id" content="{{ theme.facebook_sdk.app_id }}" />
 {% endif %}
 
+{% include 'app.swig' %}
 
 {{
   open_graph({
