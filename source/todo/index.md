@@ -4,8 +4,14 @@ comments: false
 ---
 ### 待办事项
 ---
+#### 2016-01-11
+1. NodeJS Mapi-server的方案描述
+2. 寄送iTouch
+3. 老婆生日礼物
+
+
 #### 2016-01-04
-1. NodeJS基础web
+1. NodeJS基础web `Done`
 
 #### 2015-12-28
 1. APP Store返回时间bug
