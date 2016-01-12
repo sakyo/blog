@@ -5,9 +5,9 @@ comments: false
 ### 待办事项
 ---
 #### 2016-01-11
-1. Koa学习
+1. Koa学习 `Done`
 2. NodeJS Mapi-server的方案描述
-3. 寄送iTouch
+3. 寄送iTouch `Done`
 4. 老婆生日礼物
 5. 给华发和三湘打电话
 
