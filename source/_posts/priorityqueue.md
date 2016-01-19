@@ -113,4 +113,91 @@ private void siftDownComparable(int k, E x) {
 }
 ```
 k<half代表所有有叶子的树节点（这一点计算太巧妙了）,每一层循环，都取出这个节点的左节点值c和右节点queue[right]作比较，取出里面最小的，值赋为c，然后下坐标为child。最后比较需要移动到的位置key的值是否比c小，如果小，最后互换位置，偏移结束。循环看起来比较复杂，我们用递归的想法来描述，就是我们想移走某个根节点，就把这个跟节点一直设置为他左右节点中最小的那个，一层层往下走，直到被换的这个节点值，小于待比较的x。把最终走到的节点值设置为x，然后移除末尾的叶子即可（其实没有移除，只是设置了size的值小于一）。这里即使待比较的x和我们往下走不是一个路线也没有关系，因为这个二叉树只满足根节点小于父节点，而不会在意左右节点间的关系，所以我们那怕拿x去设置到另外一个子树也满足这个要求。
-分析完优先队列之后，我重新写了那道题的答案，代码入下：
+分析完之后，使用优先队列的算法，重新写了那道题的答案，代码入下：
+```
+public class MedianFinder {
+
+    // 长度
+    private int big_size = 0;
+
+    // 数据
+    private int[] big_data = new int[20000];
+
+    // 长度
+    private int small_size = 0;
+
+    // 数据
+    private int[] small_data = new int[20000];
+
+    // Adds a number into the data structure.
+    public void addNum(int num) {
+        offer(num, true);
+        offer(-poll(true), false);
+        if (big_size < small_size)
+            offer(-poll(false), true);
+    }
+
+    // Returns the median of current data stream
+    public double findMedian() {
+        if (big_size > small_size)
+            return big_data[0];
+        else
+            return (big_data[0] - small_data[0]) / 2.0;
+    }
+
+    private void offer(int i, boolean isbigger) {
+        if (isbigger) {
+            int k = big_size++;
+            while (k > 0) {
+                int parent = (k - 1) >>> 1;
+                if (big_data[parent] < i)
+                    break;
+                big_data[k] = big_data[parent];
+                k = parent;
+            }
+            big_data[k] = i;
+        } else {
+            int k = small_size++;
+            while (k > 0) {
+                int parent = (k - 1) >>> 1;
+                if (small_data[parent] < i)
+                    break;
+                small_data[k] = small_data[parent];
+                k = parent;
+            }
+            small_data[k] = i;
+        }
+    }
+
+    private int poll(boolean isbigger) {
+        if (isbigger) {
+            --big_size;
+            return poll(big_data, big_size);
+        } else {
+            --small_size;
+            return poll(small_data, small_size);
+        }
+    }
+
+    private int poll(int data[], int size) {
+        int last = data[size];
+        int e = data[0];
+        int pos = 0;
+        int half = size >>> 1;
+        while (pos < half) {
+            int child = (pos << 1) + 1;
+            int right = child + 1;
+            if (right < size && data[child] > data[right])
+                child = right;
+            if (last <= data[child])
+                break;
+            data[pos] = data[child];
+            pos = child;
+        }
+        data[pos] = last;
+        return e;
+    }
+}
+```
+最后看一下成绩，哈哈，beats 100%
+[排名](/img/topleetcode.png)
