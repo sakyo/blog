@@ -200,4 +200,4 @@ public class MedianFinder {
 }
 ```
 最后看一下成绩，哈哈，beats 100%
-[排名](/img/topleetcode.png)
+![排名](/img/topleetcode.png)
