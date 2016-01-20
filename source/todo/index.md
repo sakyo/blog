@@ -4,19 +4,24 @@ comments: false
 ---
 ### 待办事项
 ---
+#### 2016-01-20
+1. 用户反馈完成
+2. NodeJS服务
+3. mapi序列化协议修改
+
 #### 2016-01-11
 1. Koa学习 `Done`
-2. NodeJS Mapi-server的方案描述
+2. NodeJS Mapi-server的方案描述 `Done`
 3. 寄送iTouch `Done`
 4. 老婆生日礼物
-5. 给华发和三湘打电话
+5. 给华发和三湘打电话 `Done`
 
 
 #### 2016-01-04
 1. NodeJS基础web `Done`
 
 #### 2015-12-28
-1. APP Store返回时间bug
+1. APP Store返回时间bug `Done`
 2. 用户反馈后台 `Done`
 
 #### 2015-12-24
