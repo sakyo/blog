@@ -1,8 +1,10 @@
 title: 大脸变迁史
-date: 2016-01-27
+date: 2016-01-28
 type: picture
 tags: [大脸]
 ---
+### 大脸变迁史
+
 {% gp 6-5 %}
 ![泰国](/img/bigface/1.jpg)
 ![参加婚礼](/img/bigface/2.jpg)
