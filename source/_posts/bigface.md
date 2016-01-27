@@ -3,8 +3,6 @@ date: 2016-01-28
 type: picture
 tags: [大脸]
 ---
-<center>### 大脸变迁史</center>
-
 {% gp 6-5 %}
 ![泰国](/img/bigface/1.jpg)
 ![参加婚礼](/img/bigface/2.jpg)
