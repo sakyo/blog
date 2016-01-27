@@ -3,7 +3,7 @@ date: 2016-01-27
 type: picture
 tags: [大脸]
 ---
-{% gp 6-4 %}
+{% gp 6-5 %}
 ![泰国](/img/bigface/1.jpg)
 ![参加婚礼](/img/bigface/2.jpg)
 ![求婚](/img/bigface/3.jpg)
