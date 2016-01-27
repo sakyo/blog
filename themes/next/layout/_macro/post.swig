@@ -1,6 +1,6 @@
 {% macro render(post, is_index, post_extra_class) %}
 
-  {% set headlessPost = Array.prototype.indexOf.call(['quote', 'picture'], post.type) > -1 %}
+  {% set headlessPost = Array.prototype.indexOf.call(['quote'], post.type) > -1 %}
   {% set navlessPost = headlessPost %}
 
   {% set post_class = 'post post-type-' + post.type | default('normal') %}
