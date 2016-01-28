@@ -2,6 +2,7 @@ title: 大脸变迁史
 date: 2016-01-28
 type: picture
 tags: [大脸]
+categories: [生活]
 ---
 {% gp 6-5 %}
 ![泰国](/img/bigface/1.jpg)
