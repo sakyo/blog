@@ -5,7 +5,7 @@ comments: false
 ### 待办事项
 ---
 #### 2016-02-23
-1. NodeJs的发布、上线
+1. NodeJs的发布、上线 `Done`
 2. 加密通道
 3. 增量协议
 4. SPI
