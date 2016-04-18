@@ -4,6 +4,8 @@ comments: false
 ---
 ### 待办事项
 ---
+<embed src="http://music.163.com/style/swf/widget.swf?sid=10298241&type=3&auto=1&width=320&height=66" width="340" height="86"  allowNetworking="all"></embed>
+
 #### 2016-04-18
 1. 首页模块化配置后端流程修改
 2. 首页布局自动下发
