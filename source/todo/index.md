@@ -4,6 +4,8 @@ comments: false
 ---
 ### 待办事项
 ---
+<embed src="http://music.163.com/style/swf/widget.swf?sid=10298241&type=2&auto=1&width=320&height=66" width="320" height="66"  allowNetworking="all"></embed>
+
 #### 2016-04-20
 1. Q Learning
 2. 首页布局自动下发
