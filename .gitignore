@@ -6,5 +6,4 @@ node_modules/
 public/
 .deploy*/
 npm-debug.log
-_config.yml
 nohup.out
